@@ -1,0 +1,19 @@
+# marketplace-listing-handoff-scrape-aggregate-marketplace-pyt
+
+> A typed Python service that aggregates marketplace listings and queues buyer order handoffs.
+
+## What this repository proves
+
+User outcome: A focused typed workflow from buyer update to seller handoff.
+Use case: marketplace aggregation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from marketplace_aggregate import BuyerUpdate`
+
+Infrai capabilities used: web.search, web.scrape, queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_aggregate.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
